@@ -2,11 +2,20 @@
 <html>
 <head>
 	<title>TIMER</title>
-	<link rel="stylesheet" type="text/css" href="../style/index.css"> 
+	<link rel="stylesheet" type="text/css" href="../style/index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-	<div class="format">
-		<a href="timer.html">START</a>
+	<div class="form-style-3" id="form">
+		<form name="username" class="formContainer" action="#" method="post">
+			<fieldset><legend><b>TIMER</b></legend>
+			<label><span>Hours<span class="required">*</span></span><input type="number" class="input-field" name="field1" id="hour"></label>
+			<label><span>Minutes<span class="required">*</span></span><input type="number" class="input-field" name="field2" id="min"></label>
+			<label><span>Seconds<span class="required">*</span></span><input type="number" class="input-field" name="field3" id="sec"></label>
+			<label><span></span><input id = "btn" type="submit" value="START"></label>
+		</form>
 	</div>
+	<script type="text/javascript" src="../js/get.js">
+	</script>
 </body>
 </html>

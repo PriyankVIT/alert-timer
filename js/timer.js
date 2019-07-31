@@ -1,5 +1,6 @@
-function startTimer(duration, display) {
-    var timer = duration, hours, minutes, seconds;
+
+function startTimer(duration,display) {
+    var timer = duration, hours, minutes, second;
     var interval = setInterval(function () {
         hours   = parseInt(timer / 3600, 10);
         minutes = parseInt((timer / 60)-(hours*60), 10);
@@ -8,7 +9,6 @@ function startTimer(duration, display) {
         hours = hours < 10 ? "0" + hours : hours;
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
-
 
         document.getElementById("mins").innerHTML = minutes;
         document.getElementById("seconds").innerHTML = seconds;
@@ -22,9 +22,16 @@ function startTimer(duration, display) {
             clearInterval(interval);
         } 
     }, 1000);
-  }
-window.onload = function () {
-    var measure = (1*3600) + (0*60) + 0;
+}
+window.onload = function () {  
+    let h = window.localStorage.getItem("h")
+    let m = window.localStorage.getItem("m")
+    let s = window.localStorage.getItem("s")
+    console.log(h, m, s);
+    h = parseInt(h)
+    m = parseInt(m)
+    s = parseInt(s)
+    var measure = (h*3600) + (m*60) + s;
     display = document.querySelector('#time');
-    startTimer(measure, display);
-};  
+    startTimer(measure,display);
+};

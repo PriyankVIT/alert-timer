@@ -1,28 +1,92 @@
 body{
 	background: #f7f7f7;
 }
-.format {
+.formContainer{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
-	font-size: 300%;
 }
-a:link {
-		text-decoration: none;
+.form-style-3{
+	max-width: 450px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
-a:visited {
-		text-decoration: none;
+.form-style-3 label{
+	display:block;
+	margin-bottom: 10px;
 }
-a:link {
-		color: black;
+.form-style-3 label > span{
+	float: left;
+	width: 100px;
+	color: #3A44FF;
+	font-weight: bold;
+	font-size: 13px;
+	text-shadow: 1px 1px 1px #fff;
 }
-a:visited {
-		color: black;
+.form-style-3 fieldset{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #FFD2D2;
+	padding: 20px;
+	background: #B4FEFF;
+	box-shadow: inset 0px 0px 15px #00D7BC;
+	-moz-box-shadow: inset 0px 0px 15px #00D7BC;
+	-webkit-box-shadow: inset 0px 0px 15px #00D7BC;
 }
-a:hover {
-		color: black;
+.form-style-3 fieldset legend{
+	color: #3A44FF;
+	border-top: 1px solid #00D7BC;
+	border-left: 1px solid #00D7BC;
+	border-right: 1px solid #00D7BC;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	background: #B4FEFF;
+	padding: 0px 8px 3px 8px;
+	box-shadow: -0px -1px 2px #F1F1F1;
+	-moz-box-shadow:-0px -1px 2px #F1F1F1;
+	-webkit-box-shadow:-0px -1px 2px #F1F1F1;
+	font-weight: normal;
+	font-size: 30px;
+	font-family: helvetica;
 }
-a:active {
-		color: black;
+.form-style-3 input[type=number], 
+.form-style-3 textarea{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid #FFC2DC;
+	outline: none;
+	color: 	black;
+	padding: 5px 8px 5px 8px;
+	box-shadow: inset 1px 1px 1px #01FFDE;
+	-moz-box-shadow: inset 1px 1px 1px #01FFDE;
+	-webkit-box-shadow: inset 1px 1px 1px #01FFDE;
+	background: #D1FFFF;
+	width:50%;
+}
+.form-style-3  input[type=submit],
+.form-style-3  input[type=button]{
+	background: #5194FF;
+	border: 1px solid #0063FF;
+	padding: 5px 15px 5px 15px;
+	color: #FFCBE2;
+	box-shadow: inset -1px -1px 3px #0063FF;
+	-moz-box-shadow: inset -1px -1px 3px #0063FF ;
+	-webkit-box-shadow: inset -1px -1px 3px #0063FF ;
+	border-radius: 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;	
+	font-weight: bold;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(20%);
+}
+.required{
+	color:red;
+	font-weight:normal;
 }
